@@ -10,5 +10,5 @@ These describe the outline of the tools in this repository.
 https://marketplace.visualstudio.com/items?itemName=InnofactorSE.cinteros-devutils-ci-build-tasks <br/>
 Tasks to facilitate automation of builds and deployments.
 
-### Shuffle Builder and Shuffle Runner
-[XrmToolBox](http://www.xrmtoolbox.com) tools to help compose and run/test **Shuffle Definitions** can be downloaded from [Releases](https://github.com/Innofactor/Innofactor.Crm.CI/releases)
+### XrmToolBox Shuffle tools
+These are developed here: https://github.com/rappen/Xrm.Shuffle
