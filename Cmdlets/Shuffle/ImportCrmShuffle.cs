@@ -2,10 +2,10 @@
 {
     using Cinteros.Crm.Utils.Shuffle;
     using Innofactor.Crm.CI.Cmdlets.Structure;
-    using Innofactor.Xrm.Utils.Common.Interfaces;
     using System;
     using System.Management.Automation;
     using System.Xml;
+    using Xrm.Utils.Core.Common.Interfaces;
 
     [Cmdlet(VerbsData.Import, "CrmShuffle")]
     [OutputType(typeof(ShuffleImportResult))]

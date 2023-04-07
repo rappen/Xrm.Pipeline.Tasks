@@ -148,8 +148,6 @@
     <None Include="Cinteros.CRM.snk" />
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="..\modules\Xrm.Utils\Innofactor.Xrm.Utils.Common\Innofactor.Xrm.Utils.Common.projitems" Label="Shared" />
-  <Import Project="..\shared\Innofactor.Crm.Shuffle\Innofactor.Crm.Shuffle.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
@@ -158,7 +156,7 @@
   <PropertyGroup>
     <PreBuildEvent>rem "$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v8.1A\@InstallationFolder)bin\NETFX 4.5.1 Tools\xsd.exe" /c /f /n:Cinteros.Crm.Utils.Shuffle.Types /o:"$(ProjectDir)\Resources" "$(ProjectDir)\Resources\ShuffleDefinition.xsd"</PreBuildEvent>
   </PropertyGroup>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

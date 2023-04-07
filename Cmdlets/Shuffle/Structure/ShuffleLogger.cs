@@ -1,10 +1,10 @@
 ﻿namespace Innofactor.Crm.CI.Cmdlets.Structure
 {
-    using Innofactor.Xrm.Utils.Common.Interfaces;
     using System;
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.Reflection;
+    using Xrm.Utils.Core.Common.Interfaces;
 
     /// <summary>
     /// Implementation of ILoggable for Shuffle
@@ -113,6 +113,7 @@
             catch (Exception ex) { }
             return mb;
         }
+
         private void LogException(Exception ex)
         {
             var padding = Indentchars();
@@ -123,7 +124,9 @@
             cmdlet.WriteDebug($"{padding}{ex.StackTrace}");
             cmdlet.WriteDebug("---------------------------------------------------------");
         }
+
         #endregion Private Methods
+
         /// <summary>
         /// Returns current indentation based on section stack count
         /// </summary>
